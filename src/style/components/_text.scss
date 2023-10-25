@@ -3,10 +3,28 @@
   @include font(6rem, 100%);
   color: $text-color;
 }
+
 .genl-title span {
   color: $primary-color;
 }
+
 .genl-text {
   font-family: "Gotham";
   @include font(2rem, 130%);
+}
+
+.genl-section-title {
+  font-family: "Soniano Sans Unicode";
+  @include font(2rem, 120%);
+  color: $primary-color;
+}
+
+.genl-subtitle {
+  font-family: "Soniano Sans Unicode";
+  @include font(3rem, 120%);
+  color: $text-color;
+}
+
+.genl-subtitle span {
+  color: $primary-color;
 }

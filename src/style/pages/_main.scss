@@ -1,5 +1,7 @@
+// BANER section
 .main-banner {
   padding-top: 15.5rem;
+  padding-bottom: 39rem;
 }
 .main__banner {
   position: relative;
@@ -38,4 +40,48 @@
   right: 111rem;
   top: 35rem;
   width: 110rem;
+}
+
+// BENEFITS section
+
+.benefits {
+  margin-bottom: 16rem;
+}
+
+.benefits__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.benefits__info-text {
+  width: 69.5rem;
+}
+
+.benefits__item-img-box {
+  width: 11rem;
+  height: 11rem;
+}
+
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.benefits__item {
+  background-color: $benefits-item-bg-color;
+  width: 40rem;
+  height: 55rem;
+  border-top: 2px solid $primary-color;
+  padding: 4rem 5.7rem 4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefits__item-title {
+  color: $text-color;
+  font-family: "Gotham";
+  @include font(2.2rem, 130%, 700);
 }
