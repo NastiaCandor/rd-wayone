@@ -1,7 +1,20 @@
-.write-me__btn {
+.btn_rect {
   background-color: $primary-color;
   padding: 1rem 2rem;
   color: #232125;
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
+}
+.btn_rect-plus {
+  display: flex;
+  width: 26.5rem;
+  justify-content: space-between;
+}
+.btn_rect-plus::after {
+  content: '';
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-image: url(./assets/images/btn-plus.svg);
+  background-size: 100%;
 }

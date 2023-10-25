@@ -1,0 +1,41 @@
+.main-banner {
+  padding-top: 15.5rem;
+}
+.main__banner {
+  position: relative;
+}
+.main__info {
+  width: 75rem;
+}
+.main__banner-img {
+  width: 121rem;
+  -webkit-clip-path: url(#main-banner-shape);
+  clip-path: url(#main-banner-shape);
+}
+.main__banner-img-wrapper {
+  position: absolute;
+  top: -35rem;
+  right: -10rem;
+  z-index: -1;
+}
+.main__title {
+  margin-bottom: 2.5rem;
+}
+.main__subtitle {
+  margin-bottom: 5rem;
+}
+.main__banner-bottom-img-box {
+  position: absolute;
+  bottom: 1rem;
+}
+.main__banner-bottom-img {
+  -webkit-clip-path: url(#main-shape-bottom);
+  clip-path: url(#main-shape-bottom);
+  backdrop-filter: blur(15px);
+}
+.main__banner-right-img-box {
+  position: absolute;
+  right: 111rem;
+  top: 35rem;
+  width: 110rem;
+}
