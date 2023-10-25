@@ -45,7 +45,7 @@
 // BENEFITS section
 
 .benefits {
-  margin-bottom: 16rem;
+  margin-bottom: 15.5rem;
 }
 
 .benefits__info {
@@ -70,7 +70,7 @@
 }
 
 .benefits__item {
-  background-color: $benefits-item-bg-color;
+  background-color: $cards-bg-color;
   width: 40rem;
   height: 55rem;
   border-top: 2px solid $primary-color;
@@ -84,4 +84,70 @@
   color: $text-color;
   font-family: "Gotham";
   @include font(2.2rem, 130%, 700);
+}
+
+// MAIN_ABOUT section
+
+.main-about {
+  margin-bottom: 16rem;
+}
+
+.main-about__wrapper {
+  display: grid;
+}
+
+.main-about__title {
+  font-family: "Soniano Sans Unicode";
+  @include font(6rem, 100%);
+  color: $text-color;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  margin-bottom: 4rem;
+}
+
+.main-about__img-box {
+  width: 84rem;
+  height: 70rem;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.main-about__info {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding-left: 4rem;
+  width: 68%;
+}
+
+.main-about__docs {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  margin-top: -14rem;
+  background-color: $cards-bg-color;
+  border-top: 2px solid $primary-color;
+  height: 27.8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3.6rem;
+  justify-content: space-between;
+}
+
+.main-about__link-docs {
+  align-self: end;
+  align-items: center;
+  display: flex;
+  font-family: "Soniano Sans Unicode";
+  @include font(2rem, 120%);
+  color: $primary-color;
+}
+
+.main-about__link-btn {
+  margin-left: 1.6rem;
+  background-image: url(./assets/images/download_icon.svg);
+  background-size: 90%;
+  background-position: center;
+}
+
+.main-about__subtitle {
+  width: 44rem;
 }
