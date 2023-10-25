@@ -1,0 +1,7 @@
+.write-me__btn {
+  background-color: $primary-color;
+  padding: 1rem 2rem;
+  color: #232125;
+  font-family: "Soniano Sans Unicode";
+  @include font(2rem, 120%);
+}

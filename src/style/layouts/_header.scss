@@ -1,3 +1,35 @@
 .header {
-  background-color: red;
+  color: $header-text-color;
+  font-family: "Gotham";
+  @include font(1.8rem, 105%);
+}
+.header__wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: block;
+  width: 8.6rem;
+  height: 8.6rem;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.header__nav-item {
+  list-style: none;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.header__countries-box {
+  display: flex;
+  gap: 4.5rem;
+}
+.header__contacts-item:not(:last-child) {
+  margin-bottom: 1rem;
 }
