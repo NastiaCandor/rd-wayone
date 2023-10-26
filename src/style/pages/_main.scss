@@ -44,6 +44,7 @@
   right: 121rem;
   top: 35rem;
   width: 110rem;
+  z-index: -1;
 }
 
 // BENEFITS section
@@ -154,4 +155,61 @@
 
 .main-about__subtitle {
   width: 44rem;
+}
+
+// socials block
+
+.main__socials {
+  position: sticky;
+  right: 10rem;
+  top: 79.5rem;
+  z-index: 10;
+}
+
+.main__socials .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.main__socials-box {
+  border-radius: 8rem;
+  background-color: $primary-color;
+  width: 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+}
+
+.main__socials-box {
+  border-radius: 8rem;
+  background-color: $primary-color;
+  width: 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  max-height: 8rem;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.main__socials-box:hover {
+  max-height: 100rem;
+}
+
+.main__socials-item {
+  width: 8rem;
+}
+
+.main__socials-link {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__socials-img {
+  width: 2.6rem;
+  height: 2.6rem;
 }
