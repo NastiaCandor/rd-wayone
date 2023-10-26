@@ -84,7 +84,7 @@
   width: 58%;
 }
 
-.footer__nav, .footer__work-hours {
+.footer__nav, .footer__work-hours, .footer__back-header {
   margin-top: 5rem;
 }
 
@@ -140,4 +140,16 @@
   width: 3.2rem;
   height: 3.2rem;
   margin-right: 1rem;
+}
+
+.footer__back-header {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  justify-self: end;
+  margin-top: 5rem;
+}
+
+.footer__link-back-img {
+  width: 5rem;
+  height: 5rem;
 }
