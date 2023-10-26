@@ -1,10 +1,14 @@
 // BANER section
+.main-banner .container {
+  max-width: 192rem;
+  width: 100%;
+  padding: 0 10rem;
+  position: relative;
+}
+
 .main-banner {
   padding-top: 15.5rem;
   padding-bottom: 39rem;
-}
-.main__banner {
-  position: relative;
 }
 .main__info {
   width: 75rem;
@@ -16,8 +20,8 @@
 }
 .main__banner-img-wrapper {
   position: absolute;
-  top: -35rem;
-  right: -10rem;
+  top: -34rem;
+  right: 0;
   z-index: -1;
 }
 .main__title {
@@ -37,7 +41,7 @@
 }
 .main__banner-right-img-box {
   position: absolute;
-  right: 111rem;
+  right: 121rem;
   top: 35rem;
   width: 110rem;
 }
