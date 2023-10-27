@@ -83,3 +83,35 @@
     </div>
   </div>
 </header>
+<div class="modal modal-write-me">
+  <div class="modal__inner modal-write-me__inner">
+    <div class="modal__content">
+      <div class="modal__close">
+        <img src="./assets/images/modal-close-icon.svg" alt="x" class="modal__close-icon">
+      </div>
+      <h2 class="modal__title genl-title">Написать мне</h2>
+      <form method="post" action="" class="modal__content-form form-write">
+        <label for="name" class="form-write__label">
+          <span>Ваше имя</span>
+          <input type="text" name="name" class="form-write__input" placeholder="Иван">
+        </label>
+        <label for="tel" class="form-write__label">
+          <span>Телефон</span>
+          <input type="tel" name="tel" class="form-write__input" placeholder="+7 (999) 999-99-99" required>
+        </label>
+        <label for="email" class="form-write__label">
+          <span>E-mail</span>
+          <input type="email" name="email" class="form-write__input" placeholder="example@mail.com">
+        </label>
+        <label for="comment" class="form-write__label">
+          <span>Комментарий</span>
+          <input type="text" name="comment" class="form-write__input" placeholder="Ваш комментарий">
+        </label>
+        <button class="form-write__btn btn_rect btn_rect-plus">Отправить</button>
+      </form>
+      <p class="modal-write-me__subtitle">
+        Нажимая кнопку «отправить», вы подтверждате что ознакомлены с <a href="" class="modal-write-me__subtitle-link">пользовательским соглашением</a>
+      </p>
+    </div>
+  </div>
+</div>

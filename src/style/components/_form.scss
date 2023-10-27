@@ -1,0 +1,19 @@
+.form-write {
+  &__label {
+    font-family: "Gotham";
+    @include font(1.8rem, 105%);
+    display: flex;
+    flex-direction: column;
+    span {
+      color: $text-color;
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__input {
+    border-bottom: 0.2rem solid $border-gray-color;
+  }
+  input[name=comment] {
+    margin-top: 5.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
