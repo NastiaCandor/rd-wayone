@@ -4,6 +4,7 @@ const countriesList = document.querySelector('.footer__countries-list');
 const currCountry = document.querySelector('.countries-selected');
 
 const countriesItems = document.querySelectorAll('.footer__countries-item');
+const telItems = document.querySelectorAll('.header__link-tel');
 
 const toogleCountriesDropdown = () => {
   countriesList.classList.toggle('active');
@@ -22,7 +23,13 @@ countriesList.addEventListener('click', (e) => {
 
     countriesItems.forEach((item) => {
       item.classList.remove('hidden');
-    })
+    });
+    telItems.forEach((tel) => {
+      tel.classList.add('hidden');
+      if (tel.getAttribute('data-country') == newCountryID) {
+        tel.classList.remove('hidden');
+      }
+    });
 
     e.target.classList.add('hidden');
 

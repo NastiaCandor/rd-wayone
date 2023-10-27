@@ -39,9 +39,16 @@
 .header__countries-box {
   display: flex;
   gap: 1rem;
+  width: 30rem;
 }
 .header__contacts-item:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.header__contacts-link {
+  &.hidden {
+    display: none;
+  }
 }
 
 // countries dropdown
