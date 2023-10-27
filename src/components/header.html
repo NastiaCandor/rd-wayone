@@ -97,7 +97,8 @@
         </label>
         <label for="tel" class="form-write__label">
           <p class="form-write__label-text">Телефон<span>*</span></p>
-          <input type="tel" name="tel" class="form-write__input form-tel" placeholder="+7 (999) 999-99-99" required>
+          <input type="tel" name="tel" class="form-write__input form-tel" placeholder="+7 (999) 999-99-99" required minlength="17">
+          <div class="form__required-msg">Поле должно быть заполнено</div>
         </label>
         <label for="email" class="form-write__label">
           <p class="form-write__label-text">E-mail</p>

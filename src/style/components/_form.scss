@@ -4,6 +4,7 @@
     @include font(1.8rem, 105%);
     display: flex;
     flex-direction: column;
+    position: relative;
     &-text {
       color: $text-color;
       margin-bottom: 0.8rem;
@@ -14,9 +15,26 @@
   }
   &__input {
     border-bottom: 0.2rem solid $border-gray-color;
+    color: $text-color;
+    &::placeholder {
+      color: $placeholder-text-color;
+    }
   }
   input[name=comment] {
     margin-top: 5.5rem;
     padding-bottom: 1.5rem;
+  }
+}
+
+.form__required-msg {
+  position: absolute;
+  bottom: -2.2rem;
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  color: $primary-color;
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
