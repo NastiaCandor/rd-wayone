@@ -5,6 +5,7 @@
   color: #232125;
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn_rect-plus {
@@ -26,9 +27,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn_rect-plus:hover {
+.btn_rect:hover {
   border: solid 2px #FFC700;
-  background-color: #0000;
+  background-color: $background-color;
   color: #FFC700;;
 }
 
