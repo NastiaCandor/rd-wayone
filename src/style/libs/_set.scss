@@ -24,6 +24,9 @@ body {
     padding: 0;
     color: #A4A4A4; // цвет по умолчанию текста по сайту
     background-color: #232125;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 input,

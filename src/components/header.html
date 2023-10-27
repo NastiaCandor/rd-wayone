@@ -92,19 +92,19 @@
       <h2 class="modal__title genl-title">Написать мне</h2>
       <form method="post" action="" class="modal__content-form form-write">
         <label for="name" class="form-write__label">
-          <span>Ваше имя</span>
+          <p class="form-write__label-text">Ваше имя</p>
           <input type="text" name="name" class="form-write__input" placeholder="Иван">
         </label>
         <label for="tel" class="form-write__label">
-          <span>Телефон</span>
-          <input type="tel" name="tel" class="form-write__input" placeholder="+7 (999) 999-99-99" required>
+          <p class="form-write__label-text">Телефон<span>*</span></p>
+          <input type="tel" name="tel" class="form-write__input form-tel" placeholder="+7 (999) 999-99-99" required>
         </label>
         <label for="email" class="form-write__label">
-          <span>E-mail</span>
+          <p class="form-write__label-text">E-mail</p>
           <input type="email" name="email" class="form-write__input" placeholder="example@mail.com">
         </label>
         <label for="comment" class="form-write__label">
-          <span>Комментарий</span>
+          <p class="form-write__label-text">Комментарий</p>
           <input type="text" name="comment" class="form-write__input" placeholder="Ваш комментарий">
         </label>
         <button class="form-write__btn btn_rect btn_rect-plus">Отправить</button>

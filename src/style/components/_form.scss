@@ -4,9 +4,12 @@
     @include font(1.8rem, 105%);
     display: flex;
     flex-direction: column;
-    span {
+    &-text {
       color: $text-color;
       margin-bottom: 0.8rem;
+      span {
+        color: $primary-color;
+      }
     }
   }
   &__input {
