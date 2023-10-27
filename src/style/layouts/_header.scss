@@ -16,10 +16,20 @@
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 4rem;
 }
 .header__nav-item {
   list-style: none;
+  padding: 1rem 2rem;
+  background-color: none;
+  z-index: 25;
+  &:hover {
+    background-color: $background-color;
+    color: $primary-color;
+  }
+}
+.header__nav-link {
+  position: relative;
+  z-index: 25;
 }
 .header__info {
   display: flex;
@@ -86,7 +96,45 @@
   }
 }
 
+// Catalog dropdown menu
 
-// .footer__countries-dropdown {
-//   position: relative;
-// }
+.catalog-link {
+  position: relative;
+}
+
+.catalog__drop-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 5rem;
+  z-index: 20;
+}
+
+.catalog-link:hover {
+  .catalog__drop-wrapper{
+    display: block;
+  }
+}
+
+.catalog__drop-menu {
+  background-color: $background-color;
+  padding: 2rem;
+  padding-right: 0;
+  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 60.5rem;
+  width: max-content;
+}
+
+.catalog__drop-link {
+  min-width: 26.7rem;
+  width: 26.7rem;
+  margin-right: 4rem;
+  color: $header-text-color;
+  &:hover {
+    color: $primary-color;
+  }
+}
