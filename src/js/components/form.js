@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const msgTelRequierd = document.querySelector('.form__required-msg');
   writeMeSubBtn.addEventListener('click', (event) => {
     const telInput = document.querySelector('.form-tel');
-    if (telInput.value.length !== 17) {
-      event.preventDefault();
-      msgTelRequierd.classList.add('visible');
-    }
+    if (telInput.value.length === 17) return;
+    event.preventDefault();
+    msgTelRequierd.classList.add('visible');
   });
   telInput.addEventListener('click', () => {
     msgTelRequierd.classList.remove('visible');

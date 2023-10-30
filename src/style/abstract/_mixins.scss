@@ -4,3 +4,7 @@
   font-weight: $weight;
   line-height: $height;
 }
+
+@mixin media-screen {
+  @media (max-width: 48em) { @content; }
+}

@@ -7,6 +7,12 @@
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
+  @include media-screen {
+    padding-top: 1.2rem;
+    justify-content: flex-end;
+    gap: 16.5rem;
+    position: relative;
+  }
 }
 .header__logo {
   display: block;
@@ -16,6 +22,22 @@
 .header__nav {
   display: flex;
   align-items: center;
+  @include media-screen {
+    display: none;
+  }
+  &_mobile {
+    display: none;
+    @include media-screen {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: -100vw;
+      &.active {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
 }
 .header__nav-item {
   list-style: none;
@@ -35,6 +57,9 @@
   display: flex;
   align-items: center;
   gap: 6rem;
+  @include media-screen {
+    display: none;
+  }
 }
 .header__countries-box {
   display: flex;
@@ -49,6 +74,32 @@
   &.hidden {
     display: none;
   }
+}
+
+.header-menu_mobile {
+  display: none;
+  @include media-screen {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+  }
+}
+
+.header__contacts_mobile {
+  display: none;
+  @include media-screen {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+}
+
+.hamburger__wrapper {
+  position: absolute;
+  left: 0;
 }
 
 // countries dropdown
