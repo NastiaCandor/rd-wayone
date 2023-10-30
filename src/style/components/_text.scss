@@ -11,18 +11,27 @@
 .genl-text {
   font-family: "Gotham";
   @include font(2rem, 130%);
+  @include media-screen {
+    @include font(3.2rem, 131%);
+  }
 }
 
 .genl-section-title {
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
   color: $primary-color;
+  @include media-screen {
+    @include font(3.2rem, 120%);
+  }
 }
 
 .genl-subtitle {
   font-family: "Soniano Sans Unicode";
   @include font(3rem, 120%);
   color: $text-color;
+  @include media-screen {
+    @include font(4rem, 120%);
+  }
 }
 
 .genl-subtitle span {

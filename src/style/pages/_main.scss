@@ -9,26 +9,69 @@
 .main-banner {
   padding-top: 15.5rem;
   padding-bottom: 39rem;
+  @include media-screen {
+    padding-bottom: 16rem;
+  }
 }
 .main__info {
   width: 75rem;
+  @include media-screen {
+    margin-top: -17rem;
+    width: 68.5rem;
+  }
 }
+
+.main__banner {
+  @include media-screen {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 .main__banner-img {
   width: 121rem;
   -webkit-clip-path: url(#main-banner-shape);
   clip-path: url(#main-banner-shape);
+  @include media-screen {
+    display: none;
+  }
 }
+
+.main__banner-img_mobile {
+  display: none;
+  @include media-screen {
+    display: block;
+  }
+}
+
 .main__banner-img-wrapper {
   position: absolute;
   top: -34rem;
   right: 0;
   z-index: -1;
+  @include media-screen {
+    top: -25.5rem;
+    position: relative;
+    width: 100vw;
+    right: auto;
+  }
 }
 .main__title {
   margin-bottom: 2.5rem;
+  @include media-screen {
+    margin-bottom: 3.5rem;
+    br {
+      display: none;
+    }
+  }
 }
 .main__subtitle {
   margin-bottom: 5rem;
+  @include media-screen {
+    width: 61rem;
+    margin-bottom: 8rem;
+  }
 }
 .main__banner-bottom-img-box {
   position: absolute;
@@ -45,6 +88,9 @@
   top: 35rem;
   width: 110rem;
   z-index: -1;
+  @include media-screen {
+    display: none;
+  }
 }
 
 // BENEFITS section
@@ -57,6 +103,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 6rem;
+  @include media-screen {
+    flex-direction: column;
+    gap: 4.5rem;
+    margin-bottom: 6.5rem;
+  }
 }
 
 .benefits__info-text {
@@ -66,12 +117,20 @@
 .benefits__item-img-box {
   width: 11rem;
   height: 11rem;
+  @include media-screen {
+    width: 8.4rem;
+    height: 8.4rem;
+    min-width: 8.4rem;
+  }
 }
 
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+  @include media-screen {
+    gap: 2.5rem;
+  }
 }
 
 .benefits__item {
@@ -83,18 +142,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include media-screen {
+    width: 100%;
+    height: 22.2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 4rem 2.5rem 4rem 3.2rem;
+  }
 }
 
 .benefits__item-title {
   color: $text-color;
   font-family: "Gotham";
   @include font(2.2rem, 130%, 700);
+  @include media-screen {
+    @include font(3.5rem, 120%, 700);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.benefits__item-info {
+  @include media-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 // MAIN_ABOUT section
 
 .main-about {
   padding-bottom: 16rem;
+  @include media-screen {
+    padding-bottom: 0rem;
+  }
 }
 
 .main-about__wrapper {
@@ -108,6 +190,9 @@
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   margin-bottom: 4rem;
+  @include media-screen {
+   margin-bottom: 5rem;
+  }
 }
 
 .main-about__img-box {
@@ -115,6 +200,14 @@
   height: 70rem;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  @include media-screen {
+    grid-row: 3 / 4;
+    width: 68.6rem;
+    height: 40rem;
+    margin-top: 6.5rem;
+    margin-bottom: 16.5rem;
+    overflow: hidden;
+  }
 }
 
 .main-about__info {
@@ -122,6 +215,12 @@
   grid-column: 2 / 3;
   padding-left: 4rem;
   width: 68%;
+  @include media-screen {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .main-about__docs {
@@ -135,6 +234,12 @@
   flex-direction: column;
   padding: 3.6rem;
   justify-content: space-between;
+  @include media-screen {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    padding: 4rem;
+    height: 30rem;
+  }
 }
 
 .main-about__link-docs {
@@ -144,6 +249,10 @@
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
   color: $primary-color;
+  @include media-screen {
+    align-self: flex-start;
+    @include font(3.2rem, 120%);
+  }
 }
 
 .main-about__link-btn {
@@ -151,10 +260,16 @@
   background-image: url(./assets/images/download_icon.svg);
   background-size: 90%;
   background-position: center;
+  @include media-screen {
+    margin-left: 3rem;
+  }
 }
 
 .main-about__subtitle {
   width: 44rem;
+  @include media-screen {
+    width: 97%;
+  }
 }
 
 // socials block
@@ -164,6 +279,18 @@
   right: 10rem;
   top: 79.5rem;
   z-index: 10;
+  @include media-screen {
+    position: fixed;
+    top: 60%;
+    height: 452vw;
+    top: 140rem;
+    position: absolute;
+    right: 0;
+    .container {
+      position: sticky;
+      top: 86vh;
+    }
+  }
 }
 
 .main__socials .container {
@@ -191,6 +318,11 @@
   max-height: 8rem;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+  @include media-screen {
+    position: relative;
+    width: 12rem;
+    max-height: 12rem;
+  }
 }
 
 .main__socials-box:hover {
@@ -199,6 +331,9 @@
 
 .main__socials-item {
   width: 8rem;
+  @include media-screen {
+    width: 12rem;
+  }
 }
 
 .main__socials-link {
@@ -207,9 +342,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include media-screen {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 .main__socials-img {
   width: 2.6rem;
   height: 2.6rem;
+  @include media-screen {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
 }

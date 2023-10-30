@@ -6,6 +6,10 @@
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
   transition: all 0.3s ease-in-out;
+  @include media-screen {
+    @include font(3.2rem, 150%);
+    padding: 0.8rem 2.4rem;
+  }
 }
 
 .btn_rect-plus {
@@ -25,6 +29,11 @@
   background-repeat: no-repeat;
   margin-left: 9.5rem;
   transition: all 0.3s ease-in-out;
+  @include media-screen {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-left: 7.2rem;
+  }
 }
 
 .btn_rect:hover {
@@ -42,4 +51,8 @@
   border-radius: 50%;
   width: 3.6rem;
   height: 3.6rem;
+  @include media-screen {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
 }
