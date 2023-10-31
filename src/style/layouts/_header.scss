@@ -226,6 +226,7 @@
     .btn_round {
       width: 8rem;
       height: 8rem;
+      padding: 1rem;
     }
   }
   &__nav_mobile {
@@ -288,4 +289,69 @@
       height: 5.6rem;
     }
   }
+}
+
+// burger menu catalog
+
+.header__burger-catalog {
+  display: none;
+  overflow: scroll;
+  @include media-screen {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    background-color: $background-color;
+    width: 100%;
+    height: 100%;
+    padding: 3.2rem;
+    top: 0;
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease-in-out;
+    &.active {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+  .catalog__drop-wrapper {
+    display: flex;
+    position: relative;
+    padding: 0;
+    padding-top: 3rem;
+  }
+  .catalog__drop-menu {
+    max-height: fit-content;
+    flex-wrap: nowrap;
+    background-color: #00000000;
+    width: 100%;
+    padding: 0;
+    row-gap: 3.2rem;
+  }
+  .catalog__drop-link {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    @include font(3.2rem, 130%);
+    width: 100%;
+    max-width: 100%;
+    color: $text-color;
+  }
+  .header__burger-catalog-title {
+    font-family: "Soniano Sans Unicode";
+    @include font(4rem, 120%);
+    margin-left: 2rem;
+    color: $text-color;
+  }
+  .burger-catalog__back {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+  .header__burger-top {
+    align-items: center;
+  }
+}
+
+.burger__catalog-img {
+  width: 8rem;
 }
