@@ -181,6 +181,13 @@
   }
 }
 
+.header__contacts-link_mobile {
+  @include media-screen {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
+
 .hamburger__wrapper {
   position: absolute;
   left: 0;
