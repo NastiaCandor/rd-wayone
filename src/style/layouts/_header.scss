@@ -117,6 +117,23 @@
 
 // Catalog dropdown menu
 
+.header__nav-item.catalog-link {
+  .header__nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .header__catalog-item-icon {
+    width: 1.4rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    .header__catalog-item-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .catalog-link {
   position: relative;
 }
