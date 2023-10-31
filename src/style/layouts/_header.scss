@@ -104,15 +104,15 @@
 
 // countries dropdown
 
-.footer__countries-dropdown {
+.header__countries-dropdown {
   position: relative;
   width: 12rem;
   cursor: pointer;
-  .footer__countries-select {
+  .header__countries-select {
     transition: color 0.5s ease-in-out;
   }
   &.active {
-    .footer__countries-select {
+    .header__countries-select {
       color: #FFC700;
     }
     .countries-icon {
@@ -121,7 +121,7 @@
   }
 }
 
-.footer__countries-select {
+.header__countries-select {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -132,11 +132,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.footer__countries-select {
+.header__countries-select {
   margin-bottom: 0.8rem;
 }
 
-.footer__countries-list {
+.header__countries-list {
   max-height: 0;
   overflow: hidden;
   position: absolute;
@@ -146,7 +146,7 @@
   }
 }
 
-.footer__countries-item {
+.header__countries-item {
   list-style: none;
   margin-bottom: 0.8rem;
   &.hidden {

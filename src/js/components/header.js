@@ -1,9 +1,9 @@
-const countiesDropdown = document.querySelector('.footer__countries-select');
-const countriesBox = document.querySelector('.footer__countries-dropdown');
-const countriesList = document.querySelector('.footer__countries-list');
+const countiesDropdown = document.querySelector('.header__countries-select');
+const countriesBox = document.querySelector('.header__countries-dropdown');
+const countriesList = document.querySelector('.header__countries-list');
 const currCountry = document.querySelector('.countries-selected');
 
-const countriesItems = document.querySelectorAll('.footer__countries-item');
+const countriesItems = document.querySelectorAll('.header__countries-item');
 const telItems = document.querySelectorAll('.header__link-tel');
 
 const toogleCountriesDropdown = () => {
