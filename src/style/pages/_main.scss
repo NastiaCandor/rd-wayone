@@ -317,7 +317,7 @@
   position: absolute;
   max-height: 8rem;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out,;
   @include media-screen {
     position: relative;
     width: 12rem;
@@ -327,6 +327,11 @@
 
 .main__socials-box:hover {
   max-height: 100rem;
+}
+
+.main__socials-box.active {
+  max-height: 100rem;
+  transform: translateY(-12rem);
 }
 
 .main__socials-item {
