@@ -25,19 +25,6 @@
   @include media-screen {
     display: none;
   }
-  &_mobile {
-    display: none;
-    @include media-screen {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      left: -100vw;
-      &.active {
-        left: 0;
-        top: 0;
-      }
-    }
-  }
 }
 .header__nav-item {
   list-style: none;
@@ -74,32 +61,6 @@
   &.hidden {
     display: none;
   }
-}
-
-.header-menu_mobile {
-  display: none;
-  @include media-screen {
-    display: flex;
-    align-items: center;
-    margin: 0 1rem;
-    position: absolute;
-    left: 0;
-    top: 5rem;
-  }
-}
-
-.header__contacts_mobile {
-  display: none;
-  @include media-screen {
-    display: flex;
-    gap: 2.4rem;
-    align-items: center;
-  }
-}
-
-.hamburger__wrapper {
-  position: absolute;
-  left: 0;
 }
 
 // countries dropdown
@@ -194,5 +155,130 @@
   color: $header-text-color;
   &:hover {
     color: $primary-color;
+  }
+}
+
+// burger menu
+
+.header-menu_mobile {
+  display: none;
+  @include media-screen {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+  }
+}
+
+.header__contacts_mobile {
+  display: none;
+  @include media-screen {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+}
+
+.hamburger__wrapper {
+  position: absolute;
+  left: 0;
+}
+
+.header {
+  &__burger-menu {
+    display: none;
+    overflow: scroll;
+    @include media-screen {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      z-index: 50;
+      background-color: $background-color;
+      width: 100%;
+      height: 100%;
+      padding: 3.2rem;
+      top: 0;
+      transform: translateX(-100vw);
+      transition: transform 0.5s ease-in-out;
+      &.active {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+  &__burger-top {
+    display: flex;
+    justify-content: space-between;
+    .header__logo {
+      width: 14rem;
+      height: 14rem;
+    }
+    .btn_round {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  &__nav_mobile {
+    font-family: "Gotham";
+    @include font(3.2rem, 130%);
+    color: $text-color;
+    padding: 8rem 0 12rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    .header__nav-item {
+      padding: 0;
+    }
+  }
+  &__burger-phones {
+    border-top: solid 0.2rem $border-gray-color;
+    @include font(2.8rem, 136%, 700);
+    padding: 4rem 0;
+    display: flex;
+    gap: 3.6rem;
+    &::before {
+      content: '';
+      display: block;
+      background-image: url(./assets/images/header__tel-icon.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+  }
+  &__burger-phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  &__burger-tel {
+    display: flex;
+    gap: 1.6rem;
+    &-title {
+      @include font(3.2rem, 130%, 400);
+      color: $text-color;
+    }
+  }
+  &__burger-email {
+    border-top: solid 0.2rem $border-gray-color;
+    border-bottom: solid 0.2rem $border-gray-color;
+    @include font(2.8rem, 136%, 700);
+    padding: 4rem 0;
+    display: flex;
+    gap: 3.6rem;
+    align-items: center;
+    margin-bottom: 12rem;
+    &::before {
+      content: '';
+      display: block;
+      background-image: url(./assets/images/header__email-icon.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 5.6rem;
+      height: 5.6rem;
+    }
   }
 }
