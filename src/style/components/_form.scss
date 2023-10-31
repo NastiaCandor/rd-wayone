@@ -11,6 +11,12 @@
       span {
         color: $primary-color;
       }
+      @include media-screen {
+        margin-bottom: 1.6rem;
+      }
+    }
+    @include media-screen {
+      font-size: 2.8rem;
     }
   }
   &__input {
@@ -19,10 +25,16 @@
     &::placeholder {
       color: $placeholder-text-color;
     }
+    @include media-screen {
+      padding-bottom: 0.8rem;
+    }
   }
   input[name=comment] {
     margin-top: 5.5rem;
     padding-bottom: 1.5rem;
+    @include media-screen {
+      margin-top: 12rem;
+    }
   }
 }
 
@@ -38,5 +50,11 @@
     opacity: 1;
     z-index: 100;
     transform: translateY(0);
+  }
+}
+
+.form-write__btn {
+  @include media-screen {
+    margin-top: -3rem;
   }
 }
