@@ -37,3 +37,8 @@ catalogCloseBtn.addEventListener('click', () => {
   closeCatalogBurgerMenu();
   closeBurgerMenu();
 });
+
+
+// Open burger menu on clicking phone icon in header
+const mobileTel = document.querySelector('.header__tel-mobile');
+mobileTel.addEventListener('click', openBurgerMenu);
