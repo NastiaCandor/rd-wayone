@@ -29,7 +29,6 @@ hamburgerClose.addEventListener('click', closeBurgerMenu);
 
 catalogLink.addEventListener('click', openCatalogBurgerMenu);
 
-console.log(catalogBackBtn);
 catalogBackBtn.addEventListener('click', () => {
   closeCatalogBurgerMenu();
 });
