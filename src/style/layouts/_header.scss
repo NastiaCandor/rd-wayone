@@ -2,6 +2,7 @@
   color: $header-text-color;
   font-family: "Gotham";
   @include font(1.8rem, 105%);
+  position: relative;
 }
 .header__wrapper {
   padding-top: 2rem;
