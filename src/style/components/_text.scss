@@ -41,4 +41,7 @@
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
   color: $gray-text-color;
+  @include media-screen {
+    font-size: 3.2rem;
+  }
 }

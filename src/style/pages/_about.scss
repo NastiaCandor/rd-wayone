@@ -1,28 +1,63 @@
 .about-banner {
   padding: 8rem 0;
+  @include media-screen {
+    padding: 7rem 0;
+  }
   &__title {
     margin-bottom: 3.2rem;
+    @include media-screen {
+      margin-bottom: 5.2rem;
+    }
   }
   &__text {
     width: 106rem;
     margin-bottom: 3rem;
+    @include media-screen {
+      width: 99%;
+      margin-bottom: 6.5rem;
+    }
+  }
+  &__img-box {
+    @include media-screen {
+      display: none;
+    }
+    &_mobile {
+      display: none;
+      @include media-screen {
+        display: block;
+      }
+    }
   }
   &__subblock {
     background-color: $cards-bg-color;
     width: 85.4rem;
     padding: 3.2rem;
+    @include media-screen {
+      width: 100%;
+      padding: 4rem;
+    }
   }
   &__subblock-text.genl-subtitle {
     font-size: 2rem;
     width: 50rem;
+    @include media-screen {
+      font-size: 3.2rem;
+      width: 94%;
+    }
   }
 }
 
 .about-benefits {
   padding: 8rem 0 15.5rem;
+  @include media-screen {
+    padding-bottom: 0.5rem;
+  }
   .container {
     display: flex;
     gap: 1rem;
+    @include media-screen {
+      flex-direction: column;
+    }
   }
   &__text-box {
     width: 50%;
@@ -30,13 +65,41 @@
     display: flex;
     flex-direction: column;
     height: 71rem;
+    @include media-screen {
+      width: 100%;
+      padding-right: 4rem;
+      height: fit-content;
+    }
+  }
+  &__subtitle {
+    @include media-screen {
+      width: 79%;
+    }
   }
   &__img-side {
     width: 50%;
+    @include media-screen {
+      width: 100%;
+      margin-top: 2.5rem;
+    }
+  }
+  &__img-box {
+    height: 40rem;
+    overflow: hidden;
+    display: flex;
   }
   &__title {
     width: 60rem;
     margin: 3rem 0 3rem 0;
+    @include media-screen {
+      margin-bottom: 4rem;
+    }
+    br {
+      display: none;
+      @include media-screen {
+        display: block;
+      }
+    }
   }
   &__text {
     br {
@@ -52,20 +115,34 @@
     justify-content: space-between;
     padding-right: 2rem;
     margin-top: auto;
+    @include media-screen {
+      flex-wrap: wrap;
+      padding: 0;
+      margin-top: 6rem;
+      row-gap: 3rem;
+    }
   }
   &__plus-item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    @include media-screen {
+      width: 29rem;
+      &:first-child {
+        order: 3;
+      }
+    }
   }
-}
-
-.about-benefits {
   &__subblock {
     background-color: $cards-bg-color;
     padding: 2rem;
     margin-top: 1.2rem;
     display: flex;
     flex-direction: row-reverse;
+    @include media-screen {
+      margin-top: 2.4rem;
+      flex-direction: row;
+      padding: 2.4rem 4.2rem;
+    }
   }
 }
