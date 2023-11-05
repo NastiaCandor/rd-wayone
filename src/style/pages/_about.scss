@@ -1,0 +1,71 @@
+.about-banner {
+  padding: 8rem 0;
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+  &__text {
+    width: 106rem;
+    margin-bottom: 3rem;
+  }
+  &__subblock {
+    background-color: $cards-bg-color;
+    width: 85.4rem;
+    padding: 3.2rem;
+  }
+  &__subblock-text.genl-subtitle {
+    font-size: 2rem;
+    width: 50rem;
+  }
+}
+
+.about-benefits {
+  padding: 8rem 0 15.5rem;
+  .container {
+    display: flex;
+    gap: 1rem;
+  }
+  &__text-box {
+    width: 50%;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    height: 71rem;
+  }
+  &__img-side {
+    width: 50%;
+  }
+  &__title {
+    width: 60rem;
+    margin: 3rem 0 3rem 0;
+  }
+  &__text {
+    br {
+      margin-top: 3rem;
+      content: '';
+      display: block;
+    }
+  }
+  &__plus-list {
+    display: flex;
+    margin-top: 16rem;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 2rem;
+    margin-top: auto;
+  }
+  &__plus-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.about-benefits {
+  &__subblock {
+    background-color: $cards-bg-color;
+    padding: 2rem;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

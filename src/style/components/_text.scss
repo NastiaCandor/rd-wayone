@@ -32,8 +32,13 @@
   @include media-screen {
     @include font(4rem, 120%);
   }
+  span {
+    color: $primary-color;
+  }
 }
 
-.genl-subtitle span {
-  color: $primary-color;
+.genl-reg-text {
+  font-family: "Soniano Sans Unicode";
+  @include font(2rem, 120%);
+  color: $gray-text-color;
 }

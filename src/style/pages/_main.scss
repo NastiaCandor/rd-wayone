@@ -244,25 +244,6 @@
 
 .main-about__link-docs {
   align-self: end;
-  align-items: center;
-  display: flex;
-  font-family: "Soniano Sans Unicode";
-  @include font(2rem, 120%);
-  color: $primary-color;
-  @include media-screen {
-    align-self: flex-start;
-    @include font(3.2rem, 120%);
-  }
-}
-
-.main-about__link-btn {
-  margin-left: 1.6rem;
-  background-image: url(./assets/images/download_icon.svg);
-  background-size: 90%;
-  background-position: center;
-  @include media-screen {
-    margin-left: 3rem;
-  }
 }
 
 .main-about__subtitle {

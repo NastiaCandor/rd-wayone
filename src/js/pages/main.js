@@ -12,7 +12,7 @@ const activeSocialBox = (event) => {
   }, 3000);
 };
 
-socialsBox.addEventListener('touchstart', activeSocialBox);
+if (socialsBox) socialsBox.addEventListener('touchstart', activeSocialBox);
 
 // add padding to social block to stop it before reaching footer
 $(document).on('scroll', function() {
