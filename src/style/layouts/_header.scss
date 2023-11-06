@@ -288,7 +288,7 @@
     gap: 1.6rem;
     &-title {
       @include font(3.2rem, 130%, 400);
-      color: $text-color;
+      color: $gray-text-color;
     }
   }
   &__burger-email {
