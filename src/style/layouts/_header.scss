@@ -70,12 +70,9 @@
   position: relative;
   width: 12rem;
   cursor: pointer;
-  .header__countries-select {
-    transition: color 0.5s ease-in-out;
-  }
   &.active {
-    .header__countries-select {
-      color: #FFC700;
+    .header__countries-select:hover {
+      color: $primary-color;
     }
     .countries-icon {
       transform: rotate(90deg);
@@ -114,6 +111,9 @@
   &.hidden {
     display: none;
   }
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 // Catalog dropdown menu
@@ -121,12 +121,15 @@
 .header__nav-item.catalog-link {
   .header__nav-link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8rem;
   }
   .header__catalog-item-icon {
     width: 1.4rem;
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
   &:hover {
     .header__catalog-item-icon {
