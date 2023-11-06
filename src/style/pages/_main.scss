@@ -151,7 +151,9 @@
     padding: 4rem 2.5rem 4rem 3.2rem;
   }
   &-text {
-    letter-spacing: -0.1rem;
+    @include media-screen {
+      letter-spacing: -0.1rem;
+    }
   }
 }
 
