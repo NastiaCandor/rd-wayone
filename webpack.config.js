@@ -15,6 +15,7 @@ const entryPoints = {
   index: path.resolve(__dirname, "src", "index.js"),
   main: path.resolve(__dirname, "src", "index.js"),
   about: path.resolve(__dirname, "src", "index.js"),
+  catalog: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 

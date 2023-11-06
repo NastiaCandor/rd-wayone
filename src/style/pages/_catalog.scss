@@ -1,0 +1,80 @@
+.catalog-banner {
+  padding: 8rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 70rem;
+  }
+  &__info-box {
+    background: $cards-bg-color;
+    width: 69.3rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img-box {
+    width: 11rem;
+    height: 11rem;
+  }
+  &__subtitle {
+    margin-top: auto;
+    margin-bottom: 3rem;
+  }
+  &__slider-wrapper {
+    width: 98.7rem;
+  }
+  &__swiper-img-box {
+    height: 70rem;
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+.catalog-list {
+  padding: 8.5rem 0 17rem;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    &-item {
+      list-style: '-';
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  &__item {
+    width: 40rem;
+    height: 40.2rem;
+  }
+  &__item-title {
+    color: $text-color;
+  }
+  &__item-link {
+    &:hover {
+      .catalog-list__item-title {
+        color: $primary-color;
+      }
+      .catalog-list__img {
+        filter: grayscale(0);
+      }
+      .btn_round-plus {
+        background-color: $primary-color;
+        &::after {
+          background-image: url(./assets/images/btn-plus.svg);
+        }
+      }
+    }
+  }
+  &__img {
+    filter: grayscale(1);
+  }
+  &__item-info {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

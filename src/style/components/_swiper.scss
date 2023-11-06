@@ -1,0 +1,55 @@
+.swiper-pagination {
+  bottom: 3rem !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: $text-color !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  margin: 0 0.8rem !important;
+  cursor: pointer;
+  &-active {
+    background-color: $primary-color !important;
+  }
+}
+
+.swiper-btn-prev, .swiper-btn-next {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: $primary-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-btn-prev::before {
+  content: '';
+  background-image: url(./assets/images/pagination-arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+}
+
+.swiper-btn-next::before {
+  content: '';
+  background-image: url(./assets/images/pagination-arrow-next.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+}
+
+.swiper-navigation {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+  gap: 1.6rem;
+  z-index: 11;
+}
