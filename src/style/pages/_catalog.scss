@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     height: 70rem;
+    @include media-screen {
+      flex-direction: column;
+      height: 130rem;
+    }
   }
   &__info-box {
     background: $cards-bg-color;
@@ -11,6 +15,10 @@
     padding: 4rem;
     display: flex;
     flex-direction: column;
+    @include media-screen {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
   }
   &__img-box {
     width: 11rem;
@@ -19,38 +27,76 @@
   &__subtitle {
     margin-top: auto;
     margin-bottom: 3rem;
+    @include media-screen {
+      margin: 15rem 0 3rem;
+    }
   }
   &__slider-wrapper {
     width: 98.7rem;
+    @include media-screen {
+      width: 100%;
+    }
   }
   &__swiper-img-box {
     height: 70rem;
     overflow: hidden;
     display: flex;
+    @include media-screen {
+      height: 68.5rem;
+    }
   }
 }
 
 .catalog-list {
   padding: 8.5rem 0 17rem;
+  @include media-screen {
+    padding: 14rem 0 1rem;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6rem;
     &-item {
-      list-style: '-';
+      position: relative;
+      &::before {
+        content: '.';
+        position: absolute;
+        font-size: 4.2rem;
+        top: -1.3rem;
+        left: -3.5rem;
+      }
+    }
+    @include media-screen {
+      flex-direction: column;
+    }
+  }
+  &__info-list {
+    @include media-screen {
+      margin: 5rem 0 0 6rem;
     }
   }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
+    @include media-screen {
+      row-gap: 4rem;
+      column-gap: 2.4rem;
+    }
   }
   &__item {
     width: 40rem;
     height: 40.2rem;
+    @include media-screen {
+      width: 33rem;
+      height: fit-content;
+    }
   }
   &__item-title {
     color: $text-color;
+    @include media-screen {
+      width: 27rem;
+    }
   }
   &__item-link {
     &:hover {
@@ -70,6 +116,9 @@
   }
   &__img {
     filter: grayscale(1);
+    @include media-screen {
+      filter: grayscale(0);
+    }
   }
   &__item-info {
     padding-top: 1.5rem;

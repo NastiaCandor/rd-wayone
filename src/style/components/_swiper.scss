@@ -1,3 +1,9 @@
+.swiper {
+  @include media-screen {
+    height: 77rem;
+  }
+}
+
 .swiper-pagination {
   bottom: 3rem !important;
 }
@@ -11,6 +17,45 @@
   &-active {
     background-color: $primary-color !important;
   }
+  @include media-screen {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    margin: 0 1.2rem !important;
+  }
+}
+
+.swiper-btn-prev {
+  &::before {
+    content: '';
+    background-image: url(./assets/images/pagination-arrow-prev.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+  }
+  @include media-screen {
+    left: 0;
+  }
+}
+
+.swiper-btn-next {
+  &::before {
+    content: '';
+    background-image: url(./assets/images/pagination-arrow-next.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+  }
+  @include media-screen {
+    right: 0;
+  }
 }
 
 .swiper-btn-prev, .swiper-btn-next {
@@ -19,30 +64,16 @@
   background: $primary-color;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.swiper-btn-prev::before {
-  content: '';
-  background-image: url(./assets/images/pagination-arrow-prev.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50%;
-  display: block;
-  width: 3.6rem;
-  height: 3.6rem;
-  cursor: pointer;
-}
-
-.swiper-btn-next::before {
-  content: '';
-  background-image: url(./assets/images/pagination-arrow-next.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50%;
-  display: block;
-  width: 3.6rem;
-  height: 3.6rem;
-  cursor: pointer;
+  @include media-screen {
+    position: absolute;
+    bottom: 36.5rem;
+    width: 5.6rem;
+    height: 5.6rem;
+    &::before {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+  }
 }
 
 .swiper-navigation {
@@ -52,4 +83,9 @@
   right: 4rem;
   gap: 1.6rem;
   z-index: 11;
+  @include media-screen {
+    gap: 0;
+    right: 0;
+    width: 68.5rem;
+  }
 }

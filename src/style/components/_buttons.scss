@@ -101,5 +101,8 @@
   @include media-screen {
     width: 5.6rem;
     height: 5.6rem;
+    &::after {
+      height: 5.6rem;
+    }
   }
 }
