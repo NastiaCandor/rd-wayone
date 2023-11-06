@@ -248,6 +248,9 @@
 
 .main-about__link-docs {
   align-self: end;
+  @include media-screen {
+    align-self: start;
+  }
 }
 
 .main-about__subtitle {
