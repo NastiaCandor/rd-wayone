@@ -93,6 +93,9 @@
 
 .header__countries-select {
   margin-bottom: 0.8rem;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .header__countries-list {
