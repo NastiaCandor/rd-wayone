@@ -18,11 +18,19 @@
     }
   }
   &__img-box {
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
     @include media-screen {
       display: none;
     }
     &_mobile {
       display: none;
+      filter: grayscale(1);
+      &:hover {
+        filter: grayscale(0);
+      }
       @include media-screen {
         display: block;
       }
@@ -87,6 +95,10 @@
     height: 40rem;
     overflow: hidden;
     display: flex;
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
   }
   &__title {
     width: 60rem;

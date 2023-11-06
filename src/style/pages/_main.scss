@@ -200,6 +200,10 @@
   height: 70rem;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  filter: grayscale(1);
+  &:hover {
+    filter: grayscale(0);
+  }
   @include media-screen {
     grid-row: 3 / 4;
     width: 68.6rem;
