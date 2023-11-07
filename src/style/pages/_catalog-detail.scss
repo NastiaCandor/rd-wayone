@@ -1,0 +1,168 @@
+.category-details {
+  padding: 7rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+}
+
+.category-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  &__item {
+    display: flex;
+    gap: 4rem;
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+    &:nth-child(1) {
+      .category-benefits__info {
+        background-image: url(./assets/images/category_detail-benefit_1.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &:nth-child(2) {
+      .category-benefits__info {
+        background-image: url(./assets/images/category_detail-benefit_2.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &:nth-child(3) {
+      .category-benefits__info {
+        background-image: url(./assets/images/category_detail-benefit_3.svg);
+        background-repeat: no-repeat;
+        background-position: 96% 0;
+      }
+      .category-benefits__img-box {
+        width: 61rem;
+      }
+    }
+  }
+  &__info {
+    width: 113rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-top: auto;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    width: 83.5rem;
+  }
+  &__img-box {
+    width: 54.7rem;
+  }
+}
+
+.category-catalog {
+  padding: 8.5rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  &__item {
+    width: 40rem;
+    &:hover {
+      .category-catalog__item-title {
+        color: $primary-color;
+      }
+      .category-catalog__img-box {
+        filter: grayscale(0);
+      }
+      .btn_round-plus {
+        background-color: $primary-color;
+        &::after {
+          background-image: url(./assets/images/btn-plus.svg);
+        }
+      }
+    }
+  }
+  &__img-box {
+    filter: grayscale(1);
+    background-color: $cards-bg-color;
+    background-image: url(./assets/images/catalog-detail__no-image.svg);
+    background-repeat: no-repeat;
+    background-position: 16% 17%;
+    width: 40rem;
+    height: 35rem;
+  }
+  &__item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1rem;
+  }
+  &__item-title {
+    margin-bottom: 0.8rem;
+    color: $text-color;
+    letter-spacing: 0.05rem;
+  }
+  &__item-subtitle {
+    font-family: "Gotham";
+    color: $text-color;
+    @include font(1.8rem, 106%);
+  }
+  &__more-btn {
+    margin: 0 auto;
+  }
+}
+
+.category-info {
+  margin: 7.5rem 0 15rem;
+  &__wrapper {
+    display: grid;
+    column-gap: 9rem;
+  }
+  &__section-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 4rem;
+  }
+  &__img-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    width: 69.3rem;
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  &__lemma {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    margin-bottom: 3rem;
+  }
+  &__text-right {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  &__text-left {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  &__subtitle {
+    grid-column: 2 / 4;
+    grid-row: 4;
+    margin-top: auto;
+  }
+}
