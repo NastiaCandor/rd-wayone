@@ -92,7 +92,7 @@
     }
   }
   &__img-box {
-    height: 40rem;
+    height: 62rem;
     overflow: hidden;
     display: flex;
     filter: grayscale(1);
@@ -151,7 +151,7 @@
   }
   &__subblock {
     background-color: $cards-bg-color;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1.2rem;
     display: flex;
     flex-direction: row-reverse;

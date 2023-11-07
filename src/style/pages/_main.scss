@@ -241,7 +241,7 @@
   height: 27.8rem;
   display: flex;
   flex-direction: column;
-  padding: 3.6rem;
+  padding: 3rem 2rem 3.6rem 3.6rem;
   justify-content: space-between;
   @include media-screen {
     grid-row: 4 / 5;
