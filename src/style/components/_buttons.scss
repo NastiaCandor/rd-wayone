@@ -66,11 +66,14 @@
   color: $primary-color;
   padding: 1.2rem 2rem;
   cursor: pointer;
+  height: 5.2rem;
+  margin: auto 0;
   &:hover {
     border: solid 0.2rem $primary-color;
     padding: 1.1rem 1.8rem;
   }
   @include media-screen {
+    height: 8.2rem;
     align-self: flex-start;
     @include font(3.2rem, 120%);
   }

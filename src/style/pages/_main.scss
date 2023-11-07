@@ -248,13 +248,16 @@
     grid-column: 1 / 2;
     padding: 4rem;
     height: 30rem;
+    padding-top: 2.5rem;
   }
 }
 
 .main-about__link-docs {
   align-self: end;
+  margin: 0;
   @include media-screen {
     align-self: start;
+    margin-left: -2rem;
   }
 }
 

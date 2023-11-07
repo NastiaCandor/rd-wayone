@@ -99,6 +99,9 @@
     &:hover {
       filter: grayscale(0);
     }
+    @include media-screen {
+      height: 40rem;
+    }
   }
   &__title {
     width: 60rem;
@@ -151,14 +154,14 @@
   }
   &__subblock {
     background-color: $cards-bg-color;
-    padding: 1rem;
+    padding: 1.2rem 0rem;
     margin-top: 1.2rem;
     display: flex;
     flex-direction: row-reverse;
     @include media-screen {
       margin-top: 2.4rem;
       flex-direction: row;
-      padding: 2.4rem 4.2rem;
+      padding: 1rem 2.2rem;
     }
   }
 }
