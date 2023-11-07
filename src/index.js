@@ -13,3 +13,4 @@ import './js/components/burger';
 // PAGES
 import './js/pages/main';
 import './js/pages/catalog';
+import './js/pages/product';

@@ -58,7 +58,7 @@
   }
 }
 
-.chinese-docs-link {
+.btn-docs-link {
   align-items: center;
   display: flex;
   font-family: "Soniano Sans Unicode";
@@ -73,6 +73,16 @@
 .load-btn {
   margin-left: 1.6rem;
   background-image: url(./assets/images/download_icon.svg);
+  background-size: 90%;
+  background-position: center;
+  @include media-screen {
+    margin-left: 3rem;
+  }
+}
+
+.plus-btn {
+  margin-left: 1.6rem;
+  background-image: url(./assets/images/btn-plus.svg);
   background-size: 90%;
   background-position: center;
   @include media-screen {

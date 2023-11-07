@@ -1,0 +1,41 @@
+.product-banner {
+  margin: 8rem 0 15.5rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider-wrapper {
+    width: 85.4rem;
+  }
+  &__info {
+    width: 85.4rem;
+    height: 53rem;
+  }
+  &__subtitle {
+    margin-bottom: 3rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__text {
+    color: $text-color;
+  }
+  &__swiper-img-box {
+    height: 62rem;
+    overflow: hidden;
+    display: flex;
+  }
+  &__info-bottom {
+    background: $cards-bg-color;
+    padding: 2rem 4rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .swiper-navigation {
+    bottom: 4rem;
+  }
+  .swiper-pagination {
+    bottom: 4rem !important;
+  }
+}

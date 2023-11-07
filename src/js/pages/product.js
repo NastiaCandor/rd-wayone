@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-if (document.querySelector('.catalog-banner__swiper')) {
-  const catalogBannerSwiper = new Swiper('.catalog-banner__swiper', {
+if (document.querySelector('.product-banner__swiper')) {
+  const productBannerSwiper = new Swiper('.product-banner__swiper', {
     modules: [Navigation, Pagination, Autoplay],
     loop: true,
     speed: 800,
