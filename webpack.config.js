@@ -17,7 +17,8 @@ const entryPoints = {
   about: path.resolve(__dirname, "src", "index.js"),
   catalog: path.resolve(__dirname, "src", "index.js"),
   catalog_detail: path.resolve(__dirname, "src", "index.js"),
-  product_page: path.resolve(__dirname, "src", "index.js"),
+  product: path.resolve(__dirname, "src", "index.js"),
+  product_nophoto: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 

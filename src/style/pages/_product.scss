@@ -69,3 +69,52 @@
     bottom: 4rem !important;
   }
 }
+
+// NO PHOTO
+.product-banner__wrapper_no-photo {
+  gap: 4rem;
+  @include media-screen {
+    margin-bottom: -5rem;
+  }
+  .product-banner__info {
+    width: 98.5rem;
+    height: 62rem;
+    display: flex;
+    flex-direction: column;
+    @include media-screen {
+      width: 100%;
+      height: 58rem;
+      padding-top: 3rem;
+    }
+  }
+  .product-banner {
+    &__btn-box_no-photo {
+      margin-top: auto;
+      margin-left: auto;
+      @include media-screen {
+        margin-left: 0;
+      }
+    }
+    &__no-photo-box {
+      background: $cards-bg-color;
+    }
+    &__right-side {
+      width: 100%;
+      @include media-screen {
+        display: none;
+      }
+    }
+    &__btn_no-photo {
+      &:hover {
+        background: #00000000;
+      }
+    }
+    &__no-photo-box {
+      height: 53rem;
+      background-image: url(./assets/images/catalog-detail__no-image.svg);
+      background-repeat: no-repeat;
+      background-position: 9% 10%;
+      background-size: 9.5rem;
+    }
+  }
+}
