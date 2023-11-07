@@ -67,8 +67,8 @@
   padding: 1.2rem 2rem;
   cursor: pointer;
   &:hover {
-    border: solid 0.2px $primary-color;
-    padding: 1rem 1.8rem;
+    border: solid 0.2rem $primary-color;
+    padding: 1.1rem 1.8rem;
   }
   @include media-screen {
     align-self: flex-start;
