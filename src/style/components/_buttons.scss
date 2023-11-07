@@ -64,9 +64,29 @@
   font-family: "Soniano Sans Unicode";
   @include font(2rem, 120%);
   color: $primary-color;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  &:hover {
+    border: solid 0.2px $primary-color;
+    padding: 1rem 1.8rem;
+  }
   @include media-screen {
     align-self: flex-start;
     @include font(3.2rem, 120%);
+  }
+  &:hover {
+    .load-btn {
+      background: #00000000;
+      background-image: url(./assets/images/download_icon_yellow.svg);
+      background-size: 95%;
+      background-position: center;
+    }
+    .plus-btn {
+      background: #00000000;
+      background-image: url(./assets/images/btn-plus_yellow.svg);
+      background-size: 95%;
+      background-position: center;
+    }
   }
 }
 
