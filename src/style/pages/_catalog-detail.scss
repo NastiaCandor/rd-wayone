@@ -98,6 +98,7 @@
   }
   &__text {
     width: 83.5rem;
+    color: $text-color;
     @include media-screen {
       width: 100%;
     }

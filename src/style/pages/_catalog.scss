@@ -90,6 +90,30 @@
     @include media-screen {
       width: 33rem;
       height: fit-content;
+      &:nth-child(18) {
+        order: 1;
+      }
+      &:nth-child(20) {
+        order: 2;
+      }
+      &:nth-child(21) {
+        order: 3;
+      }
+      &:nth-child(22) {
+        order: 4;
+      }
+      &:nth-child(23) {
+        order: 5;
+      }
+      &:nth-child(24) {
+        order: 7;
+      }
+      &:nth-child(25) {
+        order: 6;
+      }
+      &:nth-child(26) {
+        order: 8;
+      }
     }
   }
   &__item-title {
