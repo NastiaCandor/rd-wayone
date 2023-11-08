@@ -1,9 +1,20 @@
 .logistics {
   margin: 7.5rem 0 15.5rem;
+  @include media-screen {
+    margin: 7rem 0 0.5rem;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6.4rem;
+    @include media-screen {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    @include media-screen {
+      margin-bottom: 5rem;
+    }
   }
   &__info-text-box {
     width: 69.5rem;
@@ -12,12 +23,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-screen {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
   }
   &__list-item {
     width: 55rem;
     height: 52rem;
     display: flex;
     flex-direction: column;
+    @include media-screen {
+      width: 69rem;
+      height: 40rem;
+    }
   }
   &__top-box {
     display: flex;
@@ -29,6 +48,10 @@
       display: block;
       width: 2.8rem;
       height: 2.8rem;
+      @include media-screen {
+        width: 5.6rem;
+        height: 5.6rem;
+      }
     }
   }
   &__item-title {
@@ -36,6 +59,10 @@
     color: $text-color;
     @include font(2.2rem, 130%, 700);
     margin-top: auto;
+    @include media-screen {
+      font-size: 3.6rem;
+      margin-bottom: 0.5rem;
+    }
   }
   &__item-subtitle {
     color: $text-color;
@@ -46,7 +73,10 @@
       filter: grayscale(0);
     }
     @include media-screen {
-      filter: grayscale(0);
+      height: 40rem;
+      display: flex;
+      overflow: hidden;
+      align-items: center;
     }
   }
 }
