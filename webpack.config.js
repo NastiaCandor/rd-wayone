@@ -20,6 +20,7 @@ const entryPoints = {
   product: path.resolve(__dirname, "src", "index.js"),
   product_nophoto: path.resolve(__dirname, "src", "index.js"),
   logistics: path.resolve(__dirname, "src", "index.js"),
+  contacts: path.resolve(__dirname, "src", "index.js"),
   chinese_information: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };

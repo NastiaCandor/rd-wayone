@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+</head>
+<body>
+  <include src="./components/header.html"></include>
+  <main>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title genl-title">Контакты</h2>
+          <div class="contacts__info-wrapper">
+            <div class="contacts__map" id="map"></div>
+            <div class="contacts__info">
+              <div class="contacts__details contacts__details_address">
+                <div class="contacts__details-item">
+                  <p class="contacts__details-type genl-text">Адрес в Китае:</p>
+                  <a href="#" class="contacts__details-text genl-text">42 Hijing Road Chancheng District of Foshan City Guangdong Province</a>
+                </div>
+                <div class="contacts__details-item">
+                  <p class="contacts__details-type genl-text">Адрес в России:</p>
+                  <a href="#" class="contacts__details-text genl-text">Россия, г. Москва, ул. Гиляровского, д. 39, ст.1</a>
+                </div>
+              </div>
+              <div class="contacts__details contacts__details_email">
+                <div class="contacts__details-item">
+                  <p class="contacts__details-type genl-text">E-mail:</p>
+                  <p class="contacts__details-text genl-text">info@way-one.ru</p>
+                </div>
+              </div>
+              <div class="contacts__details contacts__details_socials">
+                <div class="footer__social-block">
+                  <h4 class="footer__social-block-title">Россия</h4>
+                  <a href="" class="footer__social-link footer__social-block_whatsapp">+7 701 995 08 68</a>
+                  <a href="" class="footer__social-link footer__social-block_tg">+7 701 995 08 68</a>
+                </div>
+                <div class="footer__social-block">
+                  <h4 class="footer__social-block-title">Казахстан</h4>
+                  <a href="" class="footer__social-link footer__social-block_whatsapp">+7 701 783 36 17</a>
+                  <a href="" class="footer__social-link footer__social-block_tg">+7 701 783 36 17</a>
+                </div>
+              </div>
+              <div class="contacts__info-bottom bordered-box">
+                <div class="contacts__rec-call genl-section-title">
+                  <p class="contacts__rec-call-title">Прием звонков:</p>
+                  <p class="contacts__rec-call-time">с 9:00 до 20:00 (Пн-Пт)</p>
+                </div>
+                <div class="contacts__tel-box genl-subtitle">
+                  <div class="contacts__tel-item">
+                    <p class="contacts__tel-text">Россия:</p>
+                    <a href="#" class="contacts__tel-link">+7 (925) 785-53-19</a>
+                  </div>
+                  <div class="contacts__tel-item">
+                    <p class="contacts__tel-text">Казахстан:</p>
+                    <a href="#" class="contacts__tel-link">+7 (701) 783-36-17</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <include src="./components/footer.html"></include>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+  </script>
+  <script>
+    ymaps.ready(init);
+    function init(){
+      // Создание карты.
+      const coordRussia = [55.783023, 37.631811]; // Россия, г. Москва, ул.Гиляровского, д. 39, ст.1
+      var map = new ymaps.Map("map", {
+        center: coordRussia,
+        zoom: 15,
+      },{
+        yandexMapDisablePoiInteractivity: true
+      });
+
+      var myGeoObject = new ymaps.GeoObject({
+          geometry: {
+              type: "Point", // тип геометрии - точка
+              coordinates: coordRussia // координаты точки
+          }
+      });
+
+      // Размещение геообъекта на карте.
+      map.geoObjects.add(myGeoObject); 
+    
+      map.controls.remove('geolocationControl');
+      map.controls.remove('searchControl');
+      map.controls.remove('trafficControl');
+      map.controls.remove('typeSelector');
+      map.controls.remove('fullscreenControl');
+      map.controls.remove('zoomControl');
+      map.controls.remove('rulerControl');
+      map.controls.remove('scrollZoom');
+      map.controls.remove('drag');
+      map.behaviors.disable(['scrollZoom']);
+    }
+  </script>
+</body>
+</html>
