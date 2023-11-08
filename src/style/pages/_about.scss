@@ -154,7 +154,7 @@
   }
   &__subblock {
     background-color: $cards-bg-color;
-    padding: 1.3rem 0rem;
+    padding: 1.3rem 1rem;
     margin-top: 1.2rem;
     display: flex;
     flex-direction: row-reverse;
@@ -163,5 +163,12 @@
       flex-direction: row;
       padding: 1rem 2.2rem;
     }
+  }
+}
+
+.about-benefits__link-docs {
+  padding: 1.2rem 1.2rem 1.2rem 2.2rem;
+  &:hover {
+    padding: 1.1rem 1rem 1.1rem 2rem;
   }
 }
