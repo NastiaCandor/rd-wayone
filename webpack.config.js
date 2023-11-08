@@ -19,6 +19,7 @@ const entryPoints = {
   catalog_detail: path.resolve(__dirname, "src", "index.js"),
   product: path.resolve(__dirname, "src", "index.js"),
   product_nophoto: path.resolve(__dirname, "src", "index.js"),
+  logistics: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 

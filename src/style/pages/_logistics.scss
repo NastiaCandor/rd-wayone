@@ -1,0 +1,52 @@
+.logistics {
+  margin: 7.5rem 0 15.5rem;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+  }
+  &__info-text-box {
+    width: 69.5rem;
+  }
+  &__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list-item {
+    width: 55rem;
+    height: 52rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__top-box {
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      content: '';
+      background-image: url(./assets/images/logistics_plus-icon.svg);
+      background-repeat: no-repeat;
+      display: block;
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+  &__item-title {
+    font-family: "Gotham";
+    color: $text-color;
+    @include font(2.2rem, 130%, 700);
+    margin-top: auto;
+  }
+  &__item-subtitle {
+    color: $text-color;
+  }
+  &__list-img-box {
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+    @include media-screen {
+      filter: grayscale(0);
+    }
+  }
+}
