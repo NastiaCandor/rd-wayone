@@ -80,7 +80,7 @@
   &:hover {
     .load-btn {
       background: #00000000;
-      background-image: url(./assets/images/download_icon_yellow.svg);
+      background-image: url(./assets/images/btn-plus_yellow.svg);
       background-size: 95%;
       background-position: center;
     }
@@ -95,7 +95,7 @@
 
 .load-btn {
   margin-left: 1.6rem;
-  background-image: url(./assets/images/download_icon.svg);
+  background-image: url(./assets/images/btn-plus.svg);
   background-size: 90%;
   background-position: center;
   @include media-screen {
