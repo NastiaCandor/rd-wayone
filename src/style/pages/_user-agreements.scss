@@ -1,0 +1,19 @@
+.terms {
+  margin: 7.5rem 0 16rem;
+  @include media-screen {
+    margin: 7rem 0 0.5rem;
+  }
+  &__title {
+    margin-bottom: 3.2rem;
+    @include media-screen {
+      margin-bottom: 5.2rem;
+    }
+  }
+  &__text {
+    color: $text-color;
+    width: 99rem;
+    @include media-screen {
+      width: 100%;
+    }
+  }
+}

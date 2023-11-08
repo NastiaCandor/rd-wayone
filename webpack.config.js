@@ -22,6 +22,7 @@ const entryPoints = {
   logistics: path.resolve(__dirname, "src", "index.js"),
   contacts: path.resolve(__dirname, "src", "index.js"),
   chinese_information: path.resolve(__dirname, "src", "index.js"),
+  user_agreement: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 
