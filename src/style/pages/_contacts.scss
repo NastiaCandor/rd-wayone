@@ -125,6 +125,9 @@
     display: flex;
     gap: 1rem;
   }
+  &__tel-text {
+    color: $gray-text-color;
+  }
 }
 
 [class*="copyrights-pane"] {
