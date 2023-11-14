@@ -19,21 +19,28 @@
   }
   &__img-box {
     filter: grayscale(1);
+    height: 47.2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 17rem;
     &:hover {
       filter: grayscale(0);
     }
     @include media-screen {
-      display: none;
+      padding-top: 0;
+      height: 59.5rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 4rem;
     }
-    &_mobile {
-      display: none;
-      filter: grayscale(1);
-      &:hover {
-        filter: grayscale(0);
-      }
-      @include media-screen {
-        display: block;
-      }
+  }
+  &__img {
+    @include media-screen {
+      width: auto;
+      height: 100%;
     }
   }
   &__subblock {
