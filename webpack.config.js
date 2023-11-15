@@ -23,6 +23,7 @@ const entryPoints = {
   contacts: path.resolve(__dirname, "src", "index.js"),
   chinese_information: path.resolve(__dirname, "src", "index.js"),
   user_agreement: path.resolve(__dirname, "src", "index.js"),
+  404: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 

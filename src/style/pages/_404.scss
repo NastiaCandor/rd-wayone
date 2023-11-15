@@ -1,0 +1,60 @@
+.not-found {
+  margin: 8rem 0 16rem;
+  @include media-screen {
+    margin: 7rem 0 0rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @include media-screen {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    padding-top: 16.5rem;
+    @include media-screen {
+      padding: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 3rem;
+    @include media-screen {
+      margin-bottom: 5rem;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 3.5rem;
+    @include media-screen {
+      margin-bottom: 5rem;
+    }
+  }
+  &__text {
+    margin-bottom: 5rem;
+    color: $text-color;
+    @include media-screen {
+      width: 80%;
+    }
+  }
+  &__img-box {
+    width: 85rem;
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+    @include media-screen {
+      width: 100%;
+      margin-top: 6.5rem;
+      display: flex;
+      align-items: center;
+      height: 60rem;
+      overflow: hidden;
+      justify-content: center;
+    }
+  }
+  &__img {
+    @include media-screen {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
