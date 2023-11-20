@@ -40,6 +40,8 @@
 .header__nav-link {
   position: relative;
   z-index: 25;
+  display: block;
+  width: 100%;
 }
 .header__info {
   display: flex;
@@ -133,11 +135,11 @@
     transition: transform 0.3s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   &:hover {
     .header__catalog-item-icon {
-      transform: rotate(180deg);
+      transform: rotate(180deg) translateY(-0.0rem);
     }
   }
 }
@@ -157,7 +159,7 @@
 
 .catalog-link:hover {
   .catalog__drop-wrapper{
-    display: block;
+    display: flex;
   }
 }
 
@@ -165,22 +167,61 @@
   background-color: $background-color;
   padding: 2rem;
   padding-right: 0;
-  row-gap: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 60.5rem;
   width: max-content;
-  width: 66rem;
+  width: 37rem;
+  position: relative;
 }
 
 .catalog__drop-link {
-  min-width: 26.7rem;
-  width: 26.7rem;
-  margin-right: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.catalog__drop-item {
+  display: flex;
+  align-items: center;
   color: $header-text-color;
-  &:hover {
+  cursor: pointer;
+  padding: 1rem 0;
+  &.active {
     color: $primary-color;
+  }
+}
+
+.catalog__drop-icon-box {
+  width: 1.4rem;
+  height: 1.4rem;
+  transform: rotate(270deg);
+  display: flex;
+  align-items: center;
+}
+.catalog__drop-second {
+  display: none;
+  width: 30rem;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: $background-color;
+  padding: 3rem 2rem 2rem 6rem;
+  .catalog__drop-link {
+    color: $header-text-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.catalog__drop-menu-second {
+  display: flex;
+
+}
+.catalog__drop-second {
+  &.visible {
+    display: flex;
   }
 }
 
@@ -380,4 +421,40 @@
 
 .burger__catalog-img {
   width: 8rem;
+}
+
+.header__burger-catalog .catalog__drop-link-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  &.active {
+    .catalog__mobile-drop {
+      max-height: 70rem;
+      transition-property: max-height, height;
+      transition-timing-function: ease;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
+.catalog__drop-mobile-item{
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  width: 100%;
+}
+.catalog__mobile-drop {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11rem;
+  max-height: 0rem;
+  overflow: hidden;
+  transition-property: max-height;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  .catalog__drop-link {
+    color: $gray-text-color;
+    padding: 1.6rem 0;
+  }
 }

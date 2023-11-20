@@ -38,3 +38,38 @@ countriesList.addEventListener('click', (e) => {
     toogleCountriesDropdown();
   }
 });
+
+const catalogItems = document.querySelectorAll('.catalog__drop-item');
+const secondDropCatalogMenus = document.querySelectorAll('.catalog__drop-second');
+const hideSecondDropMenus = () => {
+  secondDropCatalogMenus.forEach((item, ind) => {
+    catalogItems[ind].classList.remove('active');
+    item.classList.remove('visible');
+  });
+}
+catalogItems.forEach((item, ind) => {
+  item.addEventListener('mouseover', () => {
+    if (!secondDropCatalogMenus[ind]) return;
+    hideSecondDropMenus();
+    item.classList.add('active');
+    secondDropCatalogMenus[ind].classList.add('visible');
+  });
+});
+
+// mobile burger catalog dropdown
+const mobileCatalogItems = document.querySelectorAll('.catalog__drop-link-mobile');
+const closeAllMobileCatalog = () => {
+  mobileCatalogItems.forEach((item) => {
+    item.classList.remove('active');
+  });
+}
+mobileCatalogItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item.classList.contains('active')) {
+      item.classList.toggle('active');
+    } else {
+      closeAllMobileCatalog();
+      item.classList.add('active');
+    }
+  });
+});
