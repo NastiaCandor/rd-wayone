@@ -146,19 +146,21 @@
   }
 }
 
-.category-benefits__item.active {
-  .category-benefits__text {
-    max-height: 60rem;
-    padding: 0rem 4rem 20rem 4rem;
-  }
-  .category-benefits__img-box {
-    max-height: 40rem;
-  }
-  .category-benefits__info {
-    background-size: 60%;
-  }
-  .category-benefits__icon-box {
-    transform: rotate(180deg);
+@include media-screen {
+  .category-benefits__item.active {
+    .category-benefits__text {
+      max-height: 60rem;
+      padding: 0rem 4rem 20rem 4rem;
+    }
+    .category-benefits__img-box {
+      max-height: 40rem;
+    }
+    .category-benefits__info {
+      background-size: 60%;
+    }
+    .category-benefits__icon-box {
+      transform: rotate(180deg);
+    }
   }
 }
 

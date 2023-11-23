@@ -46,7 +46,7 @@
 .header__info {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 5rem;
   @include media-screen {
     display: none;
   }
@@ -54,7 +54,7 @@
 .header__countries-box {
   display: flex;
   gap: 1rem;
-  width: 30rem;
+  width: 32rem;
 }
 .header__contacts-item:not(:last-child) {
   margin-bottom: 1rem;
