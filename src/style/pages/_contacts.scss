@@ -95,7 +95,7 @@
   &__info-bottom {
     margin-top: 1.5rem;
     width: 88rem;
-    height: 28.5rem;
+    min-height: 28.5rem;
     display: flex;
     flex-direction: column;
     @include media-screen {
