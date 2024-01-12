@@ -296,23 +296,31 @@
       </div>
       <p class="modal__title genl-title">Написать мне</p>
       <form method="post" action="" class="modal__content-form form-write">
-        <label for="name" class="form-write__label">
-          <div class="form-write__label-text">Ваше имя</div>
-          <input type="text" name="name" class="form-write__input" placeholder="Иван">
-        </label>
-        <label for="tel" class="form-write__label">
-          <div class="form-write__label-text">Телефон<span>*</span></div>
-          <input type="tel" name="tel" class="form-write__input form-tel" placeholder="+7 (999) 999-99-99" required minlength="17">
+        <div class="form-write__label-block">
+          <p class="form-write__label-text">Ваше имя</p>
+          <label for="name" class="form-write__label">
+            <input type="text" name="name" class="form-write__input" placeholder="Иван">
+          </label>
+        </div>
+        <div class="form-write__label-block">
+          <p class="form-write__label-text">Телефон<span>*</span></p>
+          <label for="tel" class="form-write__label">
+            <input type="tel" name="tel" class="form-write__input form-tel" placeholder="+7 (999) 999-99-99" required minlength="17">
+          </label>
           <div class="form__required-msg">Поле должно быть заполнено</div>
-        </label>
-        <label for="email" class="form-write__label">
-          <div class="form-write__label-text">E-mail</div>
-          <input type="email" name="email" class="form-write__input" placeholder="example@mail.com">
-        </label>
-        <label for="comment" class="form-write__label">
-          <div class="form-write__label-text">Комментарий</div>
-          <input type="text" name="comment" class="form-write__input" placeholder="Ваш комментарий">
-        </label>
+        </div>
+        <div class="form-write__label-block">
+          <p class="form-write__label-text">E-mail</p>
+          <label for="email" class="form-write__label">
+            <input type="email" name="email" class="form-write__input" placeholder="example@mail.com">
+          </label>
+        </div>
+        <div class="form-write__label-block">
+          <p class="form-write__label-text">Комментарий</p>
+          <label for="comment" class="form-write__label">
+            <input type="text" name="comment" class="form-write__input" placeholder="Ваш комментарий">
+          </label>
+        </div>
         <button class="form-write__btn btn_rect btn_rect-plus">Отправить</button>
       </form>
       <p class="modal-write-me__subtitle">
